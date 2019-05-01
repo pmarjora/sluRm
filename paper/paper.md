@@ -24,15 +24,15 @@ affiliations:
 
 # Summary
 
-Now a days, high-performance-computing (HPC) clusters are commonly available tool for either **in** or **out** cloud settings. [Slurm Workload Manager](https://slurm.schedmd.com/) (see @Jette02slurm:simple) is a program written in C that is used to efficiently manage resources in HPC clusters.
+Now a days, high-performance-computing (HPC) clusters are commonly available tool for either **in** or **out** ouf cloud settings. [Slurm Workload Manager](https://slurm.schedmd.com/) (see @Jette02slurm:simple) is a program written in C that is used to efficiently manage resources in HPC clusters.
 
-While the R programming language [@R] has not been developed for HPC settings, there are currently several ways in which R can be enhance by means of HPC. The `sluRm` R package is one of those ways.
+While the R programming language [@R] has not been developed for HPC settings, there are currently several ways in which R can be enhanced by means of HPC. The `sluRm` R package is one of those ways.
 
-The `sluRm` R package provides bidings for using R in HPC settings that work with Slurm. It provides wrappers and auxiliary functions that allow the user to seamlessly integrate they analysis pipeline with HPC, putting emphasis on providing the user with a family of functions similar to what the `parallel` R package [@R] provides.
+The `sluRm` R package provides bindings for using R in HPC settings that work with Slurm. It provides wrappers and auxiliary functions that allow the user to seamlessly integrate their analysis pipeline with HPC, putting emphasis on providing the user with a family of functions similar to what the `parallel` R package [@R] provides.
 
 While there are other tools for integrating R in a HPC envirnment that works with Slurm, `sluRm` has some advantages regarding syntax, number of dependencies, and flexibility. 
 
-1.  Compared to `rslurm` [@Marchand2018], this R package's workflow is closer to the `parallel` package. `sluRm` has wrappers such as `Slurm_lapply` and `Slurm_Map` that have a similar syntax to `parLapply` and `parMap` from the `parallel` package; which is not true for `rslurm` which depends on a single function `slurm_apply`.
+1.  Compared to `rslurm` [@Marchand2018], our R package's workflow is closer to the `parallel` package. `sluRm` has wrappers such as `Slurm_lapply` and `Slurm_Map` that have a similar syntax to `parLapply` and `parMap` from the `parallel` package; which is not true for `rslurm` which depends on a single function `slurm_apply`.
 
 2.  Compared to `batchtools` [@Bischl2015], and to `future.batchtools` [@Bengtsson2019] `sluRm` is significantly more lightweight as it has 0 dependencies on R packages other than those shipped with R. `batchtools` and `future.batchtools` have 20 and 24 dependencies each.[^date]
 
@@ -40,7 +40,7 @@ While there are other tools for integrating R in a HPC envirnment that works wit
     
 [^date]: The number of dependencies was obtained from https://tinyverse.netlifly.com, which reports the number of recursive dependencies as of May 1st, 2019.
 
-Finally, the `sluRm` poses a specialized alternative for R users working in a HPC environment with Slurm.
+Finally, `sluRm` provides a specialized alternative for R users working in a HPC environment with Slurm.
 
 # Funding and Support
 
